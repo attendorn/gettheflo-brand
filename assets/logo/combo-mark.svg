@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="44" viewBox="0 0 220 44" role="img" aria-label="GettheFlo">
+  <!-- Orbit-Symbol -->
+  <path d="M22 10 C30 10, 34 16, 34 22 C34 28, 28 32, 22 32 C16 32, 12 28, 14 22 C15 18, 18 16, 22 17" stroke="#A8632A" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  <circle cx="22" cy="17" r="3" fill="#A8632A"/>
+
+  <!-- Wort-Mark "gettheflo" in Geist Sans -->
+  <text x="54" y="29" font-family="'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-size="22" font-weight="600" fill="#1C1A17" letter-spacing="-0.5">gettheflo</text>
+</svg>

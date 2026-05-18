@@ -1,0 +1,107 @@
+{
+  "$schema": "https://schemas.getthelo.de/brand/typography/v1.json",
+  "meta": {
+    "name": "GettheFlo Brand Typography",
+    "version": "0.1.0",
+    "updated": "2026-05-18",
+    "philosophy": "Geist throughout. Eine Familie für UI/Body/Display, Mono für Daten + Mikrokopie. Keine Display-Serifs, keine Schnörkel."
+  },
+  "families": {
+    "sans": {
+      "name": "Geist",
+      "stack": "'Geist', -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI', sans-serif",
+      "weights": [300, 400, 500, 600, 700],
+      "variable": true,
+      "license": "OFL",
+      "source": {
+        "google-fonts": "https://fonts.googleapis.com/css2?family=Geist:wght@300..700&display=swap",
+        "vercel": "https://vercel.com/font/sans"
+      }
+    },
+    "mono": {
+      "name": "Geist Mono",
+      "stack": "'Geist Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace",
+      "weights": [400, 500, 600],
+      "variable": true,
+      "license": "OFL",
+      "source": {
+        "google-fonts": "https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap"
+      }
+    }
+  },
+  "scale": {
+    "display-xl": {
+      "value": "48px",
+      "weight": 600,
+      "letter-spacing": "-0.035em",
+      "line-height": "1.05",
+      "role": "Marketing-Hero / Logo-Lockup-Display"
+    },
+    "display-l": {
+      "value": "36px",
+      "weight": 600,
+      "letter-spacing": "-0.03em",
+      "line-height": "1.1",
+      "role": "Seiten-Titel Cockpit / Page-Hero"
+    },
+    "display-m": {
+      "value": "28px",
+      "weight": 600,
+      "letter-spacing": "-0.025em",
+      "line-height": "1.15",
+      "role": "Person-Name in Hero / Card-Titel"
+    },
+    "title": {
+      "value": "20px",
+      "weight": 600,
+      "letter-spacing": "-0.02em",
+      "line-height": "1.25",
+      "role": "Sektion-Titel / Workshop-Karte"
+    },
+    "subtitle": {
+      "value": "16px",
+      "weight": 500,
+      "letter-spacing": "-0.01em",
+      "line-height": "1.4",
+      "role": "Untertitel / Tab-Aktiv"
+    },
+    "body": {
+      "value": "14px",
+      "weight": 400,
+      "letter-spacing": "0",
+      "line-height": "1.55",
+      "role": "Body-Text / Beschreibungen / Mail-Body"
+    },
+    "body-strong": {
+      "value": "14px",
+      "weight": 500,
+      "letter-spacing": "-0.005em",
+      "line-height": "1.5",
+      "role": "Body hervorgehoben / Tab-Inaktiv / Buttons"
+    },
+    "caption": {
+      "value": "12.5px",
+      "weight": 400,
+      "letter-spacing": "0",
+      "line-height": "1.5",
+      "role": "Metadaten / sekundärer Text"
+    },
+    "label-mono": {
+      "value": "10.5px",
+      "weight": 500,
+      "letter-spacing": "0.1em",
+      "line-height": "1.4",
+      "transform": "uppercase",
+      "family": "mono",
+      "role": "Labels / Eyebrows / Sektion-Marker"
+    },
+    "data-mono": {
+      "value": "13px",
+      "weight": 500,
+      "letter-spacing": "0",
+      "line-height": "1.4",
+      "family": "mono",
+      "role": "Zahlen / IDs / RE-Nr / Daten in Tabellen"
+    }
+  }
+}

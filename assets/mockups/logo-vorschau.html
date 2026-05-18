@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>GettheFlo Logo — Vorschau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bone: #FAF8F4;
+    --cream: #F2EDE4;
+    --ink: #1C1A17;
+    --ink-soft: #3A332A;
+    --warm-gray: #8B8478;
+    --cognac: #A8632A;
+    --stone-100: #E8E2D6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Geist', -apple-system, system-ui, sans-serif;
+    background: var(--bone);
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.55;
+    padding: 60px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    color: var(--warm-gray);
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  .label {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--warm-gray);
+    margin-bottom: 12px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+  .card {
+    background: white;
+    border: 1px solid var(--stone-100);
+    border-radius: 14px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .card-name {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--warm-gray);
+  }
+  .card-desc {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    text-align: center;
+    max-width: 220px;
+    line-height: 1.5;
+  }
+  .swatch {
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--stone-100);
+    display: flex;
+    align-items: flex-end;
+    padding: 8px 12px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    color: var(--warm-gray);
+  }
+  .swatch.dark { color: rgba(255,255,255,0.7); }
+  .palette-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .palette-swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .palette-color {
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid var(--stone-100);
+    margin-bottom: 8px;
+  }
+  .palette-meta {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10.5px;
+    color: var(--warm-gray);
+    line-height: 1.4;
+  }
+  .palette-meta strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .type-sample {
+    background: white;
+    border: 1px solid var(--stone-100);
+    border-radius: 14px;
+    padding: 32px 36px;
+    margin-bottom: 16px;
+  }
+  .type-sample .label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 14px;
+  }
+  .type-sample .meta {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    color: var(--warm-gray);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .type-display { font-size: 36px; font-weight: 600; letter-spacing: -0.03em; color: var(--ink); line-height: 1.1; }
+  .type-title { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: var(--ink); }
+  .type-body { font-size: 14px; color: var(--ink-soft); }
+  .type-mono { font-family: 'Geist Mono', monospace; font-size: 13px; color: var(--ink); }
+</style>
+</head>
+<body>
+
+<h1>GettheFlo Brand — Tag 1 Vorschau</h1>
+<div class="subtitle">Mo 18.05.2026 · Logo + Palette + Schrift · noch nicht final</div>
+
+<div class="label">Logo-Varianten</div>
+<div class="row">
+  <div class="card">
+    <div style="background: var(--bone); padding: 32px; border-radius: 12px;">
+      <img src="../logo/orbit-cognac.svg" width="88" height="88" alt="Orbit auf Bone">
+    </div>
+    <div class="card-name">orbit-cognac.svg</div>
+    <div class="card-desc">Pures Orbit-Symbol, Cognac auf Bone-Fläche. Für Cockpit-Sidebar, Mail-Header, Anwendungen mit hellem Hintergrund.</div>
+  </div>
+  <div class="card">
+    <div style="background: var(--ink); padding: 32px; border-radius: 12px;">
+      <img src="../logo/orbit-cognac-square.svg" width="88" height="88" alt="Orbit Favicon" style="filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));">
+    </div>
+    <div class="card-name">orbit-cognac-square.svg</div>
+    <div class="card-desc">Mit Bone-Rounded-Square als Hintergrund. Für Favicon, App-Icon, Standalone-Marker auf beliebigen Flächen.</div>
+  </div>
+  <div class="card">
+    <div style="background: var(--bone); padding: 32px 24px; border-radius: 12px; display: flex; align-items: center;">
+      <img src="../logo/combo-mark.svg" height="44" alt="GettheFlo Combo-Mark">
+    </div>
+    <div class="card-name">combo-mark.svg</div>
+    <div class="card-desc">Orbit + Wortmark „gettheflo" in Geist Sans. Für Header-Logo, Mail-Signaturen, Print-Visitenkarten.</div>
+  </div>
+</div>
+
+<div class="label">Farbpalette (Auszug)</div>
+<div class="palette-row">
+  <div class="palette-swatch">
+    <div class="palette-color" style="background: var(--bone);"></div>
+    <div class="palette-meta"><strong>Bone</strong><br>#FAF8F4<br>Hauptfläche</div>
+  </div>
+  <div class="palette-swatch">
+    <div class="palette-color" style="background: var(--cream);"></div>
+    <div class="palette-meta"><strong>Cream</strong><br>#F2EDE4<br>Sek. Fläche</div>
+  </div>
+  <div class="palette-swatch">
+    <div class="palette-color" style="background: var(--warm-gray);"></div>
+    <div class="palette-meta"><strong>Warm-Gray</strong><br>#8B8478<br>Text muted</div>
+  </div>
+  <div class="palette-swatch">
+    <div class="palette-color" style="background: var(--ink);"></div>
+    <div class="palette-meta"><strong>Ink</strong><br>#1C1A17<br>Text Display</div>
+  </div>
+  <div class="palette-swatch">
+    <div class="palette-color" style="background: var(--cognac);"></div>
+    <div class="palette-meta"><strong>Cognac</strong><br>#A8632A<br>Primärer Akzent</div>
+  </div>
+  <div class="palette-swatch">
+    <div class="palette-color" style="background: #6F7547;"></div>
+    <div class="palette-meta"><strong>Olive</strong><br>#6F7547<br>Status Success</div>
+  </div>
+</div>
+
+<div class="label">Schrift (Geist)</div>
+<div class="type-sample">
+  <div class="label-row">
+    <span class="meta">display</span>
+    <span class="meta">36 / 600 / -3%</span>
+  </div>
+  <div class="type-display">Workshops automatisieren, Zeit für persönliche Beratung gewinnen.</div>
+</div>
+<div class="type-sample">
+  <div class="label-row">
+    <span class="meta">title</span>
+    <span class="meta">20 / 600 / -2%</span>
+  </div>
+  <div class="type-title">Get the Workflow — KI-Gruppenworkshop</div>
+</div>
+<div class="type-sample">
+  <div class="label-row">
+    <span class="meta">body</span>
+    <span class="meta">14 / 400 / 0</span>
+  </div>
+  <div class="type-body">Wir haben noch Platz für zwei. Falls dir jemand einfällt, der hier reinpasst, bring ihn gern mit. Die Person bekommt deinen Rabatt von 100 € auf den Preis.</div>
+</div>
+<div class="type-sample">
+  <div class="label-row">
+    <span class="meta">data-mono</span>
+    <span class="meta">13 / 500</span>
+  </div>
+  <div class="type-mono">RE-1009 · 900,00 € · fällig 19.05.2026</div>
+</div>
+
+</body>
+</html>
