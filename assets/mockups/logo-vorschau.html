@@ -2,19 +2,27 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>GettheFlo Logo — Vorschau</title>
+<title>GettheFlo Brand — Tag 1 Vorschau (Aurora-Light-Mode)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700&family=Geist:wght@300..700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --bone: #FAF8F4;
     --cream: #F2EDE4;
-    --ink: #1C1A17;
-    --ink-soft: #3A332A;
+    --ink: #0A0908;
+    --ink-soft: #2A2520;
     --warm-gray: #8B8478;
-    --cognac: #A8632A;
     --stone-100: #E8E2D6;
+    --stone-300: #C4BBA9;
+    --aurora-gold: #FFD23F;
+    --aurora-ember: #FF6B35;
+    --aurora-pink: #FF3CAC;
+    --aurora-violet: #7B68EE;
+    --aurora-cyan: #00D4FF;
+    --aurora-gradient: linear-gradient(135deg, var(--aurora-gold), var(--aurora-ember), var(--aurora-pink), var(--aurora-violet), var(--aurora-cyan));
+    --success: #5E7A3F;
+    --warning: #B86A2A;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -27,11 +35,26 @@
     -webkit-font-smoothing: antialiased;
   }
   h1 {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: -0.025em;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
     color: var(--ink);
     margin-bottom: 6px;
+    line-height: 1.05;
+  }
+  h1 .accent {
+    background: var(--aurora-gradient);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 20s ease infinite;
+  }
+  @keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
   .subtitle {
     color: var(--warm-gray);
@@ -39,31 +62,31 @@
     margin-bottom: 50px;
   }
   .label {
-    font-family: 'Geist Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 10.5px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     color: var(--warm-gray);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    margin-bottom: 48px;
+    gap: 28px;
+    margin-bottom: 56px;
   }
   .card {
     background: white;
     border: 1px solid var(--stone-100);
     border-radius: 14px;
-    padding: 36px;
+    padding: 36px 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 18px;
   }
   .card-name {
-    font-family: 'Geist Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
     color: var(--warm-gray);
   }
@@ -71,55 +94,78 @@
     font-size: 12.5px;
     color: var(--ink-soft);
     text-align: center;
-    max-width: 220px;
+    max-width: 240px;
     line-height: 1.5;
   }
-  .swatch {
-    height: 60px;
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid var(--stone-100);
-    display: flex;
-    align-items: flex-end;
-    padding: 8px 12px;
-    font-family: 'Geist Mono', monospace;
-    font-size: 10px;
-    color: var(--warm-gray);
+  .logo-frame-bone {
+    background: var(--bone);
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px dashed var(--stone-300);
   }
-  .swatch.dark { color: rgba(255,255,255,0.7); }
+  .logo-frame-cream {
+    background: var(--cream);
+    padding: 28px 24px;
+    border-radius: 12px;
+  }
+  .logo-frame-ink {
+    background: var(--ink);
+    padding: 28px;
+    border-radius: 12px;
+  }
+
   .palette-row {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 12px;
-    margin-bottom: 32px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin-bottom: 56px;
   }
   .palette-swatch {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
   }
   .palette-color {
-    height: 80px;
+    height: 72px;
     border-radius: 10px;
     border: 1px solid var(--stone-100);
     margin-bottom: 8px;
   }
   .palette-meta {
-    font-family: 'Geist Mono', monospace;
-    font-size: 10.5px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px;
     color: var(--warm-gray);
     line-height: 1.4;
   }
   .palette-meta strong {
     color: var(--ink);
     font-weight: 500;
+    font-size: 10.5px;
   }
+
+  .aurora-strip {
+    margin-bottom: 56px;
+  }
+  .aurora-bar {
+    height: 80px;
+    background: var(--aurora-gradient);
+    background-size: 300% 300%;
+    animation: shimmer 20s ease infinite;
+    border-radius: 14px;
+    margin-bottom: 12px;
+  }
+  .aurora-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--warm-gray);
+    letter-spacing: 0.04em;
+  }
+
   .type-sample {
     background: white;
     border: 1px solid var(--stone-100);
     border-radius: 14px;
     padding: 32px 36px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
   .type-sample .label-row {
     display: flex;
@@ -128,101 +174,135 @@
     margin-bottom: 14px;
   }
   .type-sample .meta {
-    font-family: 'Geist Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
     color: var(--warm-gray);
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
   }
-  .type-display { font-size: 36px; font-weight: 600; letter-spacing: -0.03em; color: var(--ink); line-height: 1.1; }
-  .type-title { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: var(--ink); }
-  .type-body { font-size: 14px; color: var(--ink-soft); }
-  .type-mono { font-family: 'Geist Mono', monospace; font-size: 13px; color: var(--ink); }
+  .type-hero {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    line-height: 1.05;
+  }
+  .type-hero .energy {
+    background: var(--aurora-gradient);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 20s ease infinite;
+  }
+  .type-display-m {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+  }
+  .type-title {
+    font-family: 'Geist', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .type-body {
+    font-family: 'Geist', sans-serif;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .type-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 500;
+  }
 </style>
 </head>
 <body>
 
-<h1>GettheFlo Brand — Tag 1 Vorschau</h1>
-<div class="subtitle">Mo 18.05.2026 · Logo + Palette + Schrift · noch nicht final</div>
+<h1>GettheFlo Brand <span class="accent">Light-Mode</span> · Tag 1 Vorschau</h1>
+<div class="subtitle">Mo 18.05.2026 · Aurora bleibt Energie-Marker · DM Sans + Geist + JetBrains Mono · Cognac verworfen</div>
 
 <div class="label">Logo-Varianten</div>
 <div class="row">
   <div class="card">
-    <div style="background: var(--bone); padding: 32px; border-radius: 12px;">
-      <img src="../logo/orbit-cognac.svg" width="88" height="88" alt="Orbit auf Bone">
+    <div class="logo-frame-bone">
+      <img src="../logo/orbit-aurora.svg" width="88" height="88" alt="Orbit Aurora pur">
     </div>
-    <div class="card-name">orbit-cognac.svg</div>
-    <div class="card-desc">Pures Orbit-Symbol, Cognac auf Bone-Fläche. Für Cockpit-Sidebar, Mail-Header, Anwendungen mit hellem Hintergrund.</div>
+    <div class="card-name">orbit-aurora.svg</div>
+    <div class="card-desc">Pures Orbit-Symbol mit Aurora-Gradient. Für Verwendungen auf Bone/Cream-Flächen — Cockpit, Mail-Header, Website-Sektionen.</div>
   </div>
   <div class="card">
-    <div style="background: var(--ink); padding: 32px; border-radius: 12px;">
-      <img src="../logo/orbit-cognac-square.svg" width="88" height="88" alt="Orbit Favicon" style="filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));">
+    <div class="logo-frame-ink">
+      <img src="../logo/orbit-aurora-square.svg" width="88" height="88" alt="Orbit Aurora Favicon" style="filter: drop-shadow(0 2px 12px rgba(255, 60, 172, 0.25));">
     </div>
-    <div class="card-name">orbit-cognac-square.svg</div>
-    <div class="card-desc">Mit Bone-Rounded-Square als Hintergrund. Für Favicon, App-Icon, Standalone-Marker auf beliebigen Flächen.</div>
+    <div class="card-name">orbit-aurora-square.svg</div>
+    <div class="card-desc">Mit Bone-Rounded-Square-Hintergrund. Für Favicon, App-Icon, Marker auf beliebigen (auch dunklen) Hintergründen.</div>
   </div>
   <div class="card">
-    <div style="background: var(--bone); padding: 32px 24px; border-radius: 12px; display: flex; align-items: center;">
+    <div class="logo-frame-bone">
       <img src="../logo/combo-mark.svg" height="44" alt="GettheFlo Combo-Mark">
     </div>
     <div class="card-name">combo-mark.svg</div>
-    <div class="card-desc">Orbit + Wortmark „gettheflo" in Geist Sans. Für Header-Logo, Mail-Signaturen, Print-Visitenkarten.</div>
+    <div class="card-desc">Aurora-Orbit + „gettheflo" in DM Sans Bold (Brand-Schrift). Für Header-Logo, Mail-Signatur, Print, Social.</div>
   </div>
 </div>
 
-<div class="label">Farbpalette (Auszug)</div>
+<div class="label">Light-Mode Bühne</div>
 <div class="palette-row">
-  <div class="palette-swatch">
-    <div class="palette-color" style="background: var(--bone);"></div>
-    <div class="palette-meta"><strong>Bone</strong><br>#FAF8F4<br>Hauptfläche</div>
-  </div>
-  <div class="palette-swatch">
-    <div class="palette-color" style="background: var(--cream);"></div>
-    <div class="palette-meta"><strong>Cream</strong><br>#F2EDE4<br>Sek. Fläche</div>
-  </div>
-  <div class="palette-swatch">
-    <div class="palette-color" style="background: var(--warm-gray);"></div>
-    <div class="palette-meta"><strong>Warm-Gray</strong><br>#8B8478<br>Text muted</div>
-  </div>
-  <div class="palette-swatch">
-    <div class="palette-color" style="background: var(--ink);"></div>
-    <div class="palette-meta"><strong>Ink</strong><br>#1C1A17<br>Text Display</div>
-  </div>
-  <div class="palette-swatch">
-    <div class="palette-color" style="background: var(--cognac);"></div>
-    <div class="palette-meta"><strong>Cognac</strong><br>#A8632A<br>Primärer Akzent</div>
-  </div>
-  <div class="palette-swatch">
-    <div class="palette-color" style="background: #6F7547;"></div>
-    <div class="palette-meta"><strong>Olive</strong><br>#6F7547<br>Status Success</div>
-  </div>
+  <div class="palette-swatch"><div class="palette-color" style="background: var(--bone);"></div><div class="palette-meta"><strong>Bone</strong><br>#FAF8F4<br>Hauptfläche</div></div>
+  <div class="palette-swatch"><div class="palette-color" style="background: var(--cream);"></div><div class="palette-meta"><strong>Cream</strong><br>#F2EDE4<br>Sek. Fläche</div></div>
+  <div class="palette-swatch"><div class="palette-color" style="background: var(--stone-100);"></div><div class="palette-meta"><strong>Stone-100</strong><br>#E8E2D6<br>Borders soft</div></div>
+  <div class="palette-swatch"><div class="palette-color" style="background: var(--stone-300);"></div><div class="palette-meta"><strong>Stone-300</strong><br>#C4BBA9<br>Borders</div></div>
+  <div class="palette-swatch"><div class="palette-color" style="background: var(--warm-gray);"></div><div class="palette-meta"><strong>Warm-Gray</strong><br>#8B8478<br>Text muted</div></div>
+  <div class="palette-swatch"><div class="palette-color" style="background: var(--ink-soft);"></div><div class="palette-meta"><strong>Ink-Soft</strong><br>#2A2520<br>Text Body</div></div>
+  <div class="palette-swatch"><div class="palette-color" style="background: var(--ink);"></div><div class="palette-meta"><strong>Ink</strong><br>#0A0908<br>Display</div></div>
+  <div class="palette-swatch"><div class="palette-color" style="background: var(--success);"></div><div class="palette-meta"><strong>Success</strong><br>#5E7A3F<br>positiv</div></div>
 </div>
 
-<div class="label">Schrift (Geist)</div>
+<div class="label">Aurora · Energie-Akzent (max 5% der Fläche)</div>
+<div class="aurora-strip">
+  <div class="aurora-bar"></div>
+  <div class="aurora-meta">linear-gradient(135deg, Gold #FFD23F → Ember #FF6B35 → Pink #FF3CAC → Violet #7B68EE → Cyan #00D4FF)</div>
+</div>
+
+<div class="label">Schrift-System</div>
 <div class="type-sample">
   <div class="label-row">
-    <span class="meta">display</span>
-    <span class="meta">36 / 600 / -3%</span>
+    <span class="meta">hero · dm sans</span>
+    <span class="meta">48px / 700 / -3.5%</span>
   </div>
-  <div class="type-display">Workshops automatisieren, Zeit für persönliche Beratung gewinnen.</div>
+  <div class="type-hero">KI verändert <span class="energy">alles.</span> Die Frage ist nur: Wann dich?</div>
 </div>
 <div class="type-sample">
   <div class="label-row">
-    <span class="meta">title</span>
+    <span class="meta">display · dm sans</span>
+    <span class="meta">28 / 600 / -2.5%</span>
+  </div>
+  <div class="type-display-m">Get the Workflow — KI-Gruppenworkshop</div>
+</div>
+<div class="type-sample">
+  <div class="label-row">
+    <span class="meta">title · geist</span>
     <span class="meta">20 / 600 / -2%</span>
   </div>
-  <div class="type-title">Get the Workflow — KI-Gruppenworkshop</div>
+  <div class="type-title">Workshop-Teilnahmen — chronologisch</div>
 </div>
 <div class="type-sample">
   <div class="label-row">
-    <span class="meta">body</span>
+    <span class="meta">body · geist</span>
     <span class="meta">14 / 400 / 0</span>
   </div>
   <div class="type-body">Wir haben noch Platz für zwei. Falls dir jemand einfällt, der hier reinpasst, bring ihn gern mit. Die Person bekommt deinen Rabatt von 100 € auf den Preis.</div>
 </div>
 <div class="type-sample">
   <div class="label-row">
-    <span class="meta">data-mono</span>
+    <span class="meta">data · jetbrains mono</span>
     <span class="meta">13 / 500</span>
   </div>
   <div class="type-mono">RE-1009 · 900,00 € · fällig 19.05.2026</div>

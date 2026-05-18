@@ -45,13 +45,18 @@ gettheflo-brand/
 
 ## Brand-Charakter (Kurzform)
 
-**Stimmung:** Soft-Mac warm-persönlich. Helle neutrale Flächen, weiche Schatten, runde Ecken. Cockpit + Website + Mails fühlen sich wie persönliches Werkzeug an, nicht wie Admin-Behörde.
+**Philosophie:** Reduktion + Energie. Helle, freundliche Bühne + 5% Iridescent Aurora als Energie-Akzent. „Wie Captain Marvel — die Kraft ist immer da, sie leuchtet nur wenn's zählt." Aurora bleibt das Identity-Element von GettheFlo, wandert aber vom Dark-Mode (Stand bis 30.04.2026) auf eine helle Light-Mode-Bühne.
 
-**Palette:** Bone-Off-White als Hauptfläche, Warm-Charcoal-Ink als Text + harte Akzente, **Cognac** (`#A8632A`-Familie) als Akzent statt buntiger Aurora-Farben.
+**Palette:** Bone-Off-White (`#FAF8F4`) als Hauptfläche, Cream/Stone-Familie für Sekundär-Flächen + Borders, Ink-Charcoal (`#0A0908`) für Display-Text. **Aurora-Gradient** (Gold → Ember → Pink → Violet → Cyan) als Energie-Akzent, max 5% der Fläche (Logo, Hover-States, Stat-Highlights, Schlüsselwörter in Headlines).
 
-**Typografie:** Geist throughout — Geist Sans für alles UI/Body/Display, Geist Mono für Zahlen + Daten + Mikrokopie. Keine Display-Serifs, keine Schnörkel.
+**Typografie:**
+- **DM Sans** (Brand-Schrift): Headlines, Logo-Wort-Mark, Marketing-Hero, Display-Texte
+- **Geist** (Cockpit-UI-Schrift): Body, Tabellen, Inputs, Buttons, Tabs — ruhige Lesbarkeit in Daten-dichten Flächen
+- **JetBrains Mono**: Daten, IDs, RE-Nr, Labels, Mikrokopie
 
-**Logo:** Orbit-Symbol (aus gettheflo.de Favicon, Form unverändert) im neuen Cognac-Akzent + Geist-Sans-Wort-Mark zu Combo-Mark zusammengesetzt.
+**Logo:** Orbit-Symbol mit Aurora-Gradient (übernommen aus gettheflo.de Favicon, Form unverändert). Combo-Mark mit DM-Sans-Wort-Mark „gettheflo" rechts daneben.
+
+**Brand-Anwendungs-Regel:** Brand muss nicht jede Oberfläche dominieren. Cockpit + Mails sind eigene Tools mit eigener Identität (Geist als UI-Schrift, neutrale Bone-Bühne), Brand wird über Logo + sparsame Aurora-Akzente getragen. Marketing-Website ist der Ort wo Brand voll zur Geltung kommt.
 
 ## Lizenz
 

@@ -1,15 +1,16 @@
 {
-  "$schema": "https://schemas.getthelo.de/brand/colors/v1.json",
+  "$schema": "https://schemas.gettheflo.de/brand/colors/v1.json",
   "meta": {
     "name": "GettheFlo Brand Colors",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "updated": "2026-05-18",
-    "philosophy": "Soft-Mac warm-persönlich. Helle Flächen, warmer Akzent statt buntiger Aurora-Farben."
+    "philosophy": "Reduktion + Energie. Light-Mode-Bühne (heller, freundlicher als die alte Dark-Variante) + 5% Iridescent Aurora als Energie-Akzent. Wie Captain Marvel — Kraft ist immer da, leuchtet nur wenn's zählt.",
+    "evolution": "Dieser Stand löst den Dark-Mode-Brand vom 30.04.2026 ab (Void/Surface-dominiert). Aurora bleibt zentrales Identity-Element, wird aber jetzt auf einer hellen Bühne inszeniert. Cockpit + Mails + Website teilen die Light-Mode-Basis."
   },
   "palette": {
     "bone": {
       "value": "#FAF8F4",
-      "role": "Hauptfläche / Cockpit-Hintergrund / Mail-Body",
+      "role": "Hauptfläche / Cockpit-Hintergrund / Website-Body / Mail-Body",
       "tailwind": "bg-bone"
     },
     "cream": {
@@ -33,49 +34,44 @@
       "tailwind": "text-muted"
     },
     "ink-soft": {
-      "value": "#3A332A",
+      "value": "#2A2520",
       "role": "Text Body",
       "tailwind": "text-default"
     },
     "ink": {
-      "value": "#1C1A17",
-      "role": "Text Display / Headlines / Wort-Mark",
+      "value": "#0A0908",
+      "role": "Text Display / Headlines / Wort-Mark / harte Akzente",
       "tailwind": "text-ink"
-    },
-    "cognac": {
-      "value": "#A8632A",
-      "role": "Primärer Akzent / Logo / CTAs / Brand-Highlights",
-      "tailwind": "accent-cognac"
-    },
-    "cognac-soft": {
-      "value": "#D4A77A",
-      "role": "Akzent gedämpft / Hover-Subtle / Akzent-Hintergründe",
-      "tailwind": "accent-cognac-soft"
-    },
-    "olive": {
-      "value": "#6F7547",
-      "role": "Success / positive Status / bestätigt-Pille",
+    }
+  },
+  "aurora": {
+    "$comment": "Iridescent Energie-Palette — wird IMMER als Gradient eingesetzt, nie einzeln. Reservierte Stellen: Logo, Hover-States, Stat-Highlights, einzelne Schlüsselwörter in Headlines. Max 5% der Gesamtfläche.",
+    "gold": "#FFD23F",
+    "ember": "#FF6B35",
+    "pink": "#FF3CAC",
+    "violet": "#7B68EE",
+    "cyan": "#00D4FF",
+    "gradient": "linear-gradient(135deg, #FFD23F, #FF6B35, #FF3CAC, #7B68EE, #00D4FF)",
+    "gradient-css": "linear-gradient(135deg, var(--aurora-gold), var(--aurora-ember), var(--aurora-pink), var(--aurora-violet), var(--aurora-cyan))",
+    "animation": "background-size: 300% 300%; animation: aurora-shimmer 20s ease infinite;"
+  },
+  "status": {
+    "success": {
+      "value": "#5E7A3F",
+      "role": "Status Success (bestätigt, erledigt, OK) — gedämpft für Light-Mode",
       "tailwind": "status-success"
     },
-    "olive-soft": {
+    "success-soft": {
       "value": "#A8AC83",
-      "role": "Success-Subtle / Hintergründe für Success-Pillen",
-      "tailwind": "status-success-soft"
+      "role": "Success-Subtle Hintergrund für Pillen"
     },
-    "plum": {
-      "value": "#7A5F6D",
-      "role": "Sekundärer Akzent / Notizen / dezente Info",
-      "tailwind": "accent-plum"
-    },
-    "rust": {
-      "value": "#9F4A2A",
-      "role": "Warning / offene Rechnung / Aufmerksamkeit",
-      "tailwind": "status-warning"
+    "warning": {
+      "value": "#B86A2A",
+      "role": "Warning (offene Rechnung, Aufmerksamkeit) — gedämpft, KEINE Verwechslung mit Aurora-Ember"
     },
     "error": {
       "value": "#A23B26",
-      "role": "Error / Block / harte Stops",
-      "tailwind": "status-error"
+      "role": "Error / Block / harte Stops"
     }
   },
   "semantic": {
@@ -88,17 +84,16 @@
     "text-display": "ink",
     "text-muted": "warm-gray",
     "text-faint": "stone-300",
-    "accent-primary": "cognac",
-    "accent-secondary": "plum",
-    "status-success": "olive",
-    "status-warning": "rust",
-    "status-error": "error"
+    "accent-energy": "aurora.gradient",
+    "status-success": "status.success",
+    "status-warning": "status.warning",
+    "status-error": "status.error"
   },
   "shadows": {
-    "shadow-1": "0 1px 2px rgba(28, 26, 23, 0.04), 0 1px 3px rgba(28, 26, 23, 0.05)",
-    "shadow-2": "0 4px 12px -2px rgba(28, 26, 23, 0.08), 0 2px 4px -1px rgba(28, 26, 23, 0.04)",
-    "shadow-3": "0 10px 28px -6px rgba(168, 99, 42, 0.18), 0 4px 10px -2px rgba(28, 26, 23, 0.06)",
-    "shadow-cognac": "0 4px 14px -2px rgba(168, 99, 42, 0.30), 0 2px 6px -1px rgba(168, 99, 42, 0.18)"
+    "shadow-1": "0 1px 2px rgba(10, 9, 8, 0.04), 0 1px 3px rgba(10, 9, 8, 0.05)",
+    "shadow-2": "0 4px 12px -2px rgba(10, 9, 8, 0.08), 0 2px 4px -1px rgba(10, 9, 8, 0.04)",
+    "shadow-3": "0 10px 28px -6px rgba(10, 9, 8, 0.12), 0 4px 10px -2px rgba(10, 9, 8, 0.06)",
+    "shadow-aurora": "0 4px 20px -2px rgba(255, 60, 172, 0.20), 0 2px 8px -1px rgba(123, 104, 238, 0.15)"
   },
   "radii": {
     "sm": "8px",
