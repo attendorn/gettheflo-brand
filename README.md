@@ -18,7 +18,7 @@ GettheFlo-Brand als geteilte Quelle für alle visuellen + sprachlichen Outputs d
 
 ## Read-Only-Vertrag für Konsumenten
 
-Edits passieren in `~/gettheflo-brand/` (Mac, Florians Filesystem). Push hierhin = SSOT aktualisiert. Konsumenten ziehen den neuen Stand via `git submodule update --remote` oder Codegen-Refresh.
+Edits passieren in `~/Developer/gettheflo-brand/` (Mac, Florians Filesystem). Push hierhin = SSOT aktualisiert. Konsumenten ziehen den neuen Stand via `git submodule update --remote` oder Codegen-Refresh.
 
 ## Architektur
 
@@ -64,4 +64,4 @@ Public-Repo aus pragmatischen Gründen (CI-Builds wie Vercel können ohne PAT-Au
 
 ---
 
-Hintergrund: Brand-Sprint 18.05.2026, Plan-Checkpoint `~/Laura/work/plan-gettheflo-brand-sprint.md`, Brainstorm `~/Laura/work/brainstorm-gettheflo-brand-sprint-2026-05-18.md`.
+Hintergrund: Brand-Sprint 18.05.2026, Plan-Checkpoint `~/Developer/Laura/work/plan-gettheflo-brand-sprint.md`, Brainstorm `~/Developer/Laura/work/brainstorm-gettheflo-brand-sprint-2026-05-18.md`.
