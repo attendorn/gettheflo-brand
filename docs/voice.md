@@ -129,4 +129,4 @@ Wenn ein konkreter Brand-Claim, ein Mail-Template oder ein Outbound-Text aus Get
 - **Marketing-Texte:** gettheflo.de Live-Site
 - **Workshop-Inhalte:** `OneDrive/GettheFlo/AllCompany - General/Workshops/`
 - **Mail-Templates:** Cockpit DB `gtf_email_templates`
-- **Tonalitäts-Korrekturen:** Brainstorm-Checkpoint `~/Laura/work/brainstorm-gettheflo-brand-sprint-2026-05-18.md`
+- **Tonalitäts-Korrekturen:** Brainstorm-Checkpoint `~/Developer/Laura/work/brainstorm-gettheflo-brand-sprint-2026-05-18.md`
